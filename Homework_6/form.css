@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+h1{
+    font-style: italic;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.container{
+    margin-left: 30%;
+    margin-top: 10px;
+    width: 600px;
+    height: 730px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+}
+
+.red{
+    color: red;
+}
+
+p{
+    display: inline;
+    color: #ccc;
+}
+
+form{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.form-input{
+    width: 100%;
+    height: 50px;
+    /* display: inline; */
+    border: 1px solid #ccc;
+    margin-top: 5%;
+}
+.form-input div{
+    width: 40px;
+    height: 49px;
+    text-align: center;
+    font-size: 38px;
+    background-color: #ccc;
+    color: white;
+    float: left;
+}
+
+.form-input input{
+    margin-top: 18px;
+    float: right;
+    width: 430px;
+    outline: none;
+    border: none;
+}
+
+.form-input select{
+    margin-top: 18px;
+    float: right;
+    width: 430px;
+    outline: none;
+    border: none;
+    color: #888;
+}
+.form-input span{
+    float: right;
+    margin-top: -15px;
+    color: #ccc;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.form-input:has(input:focus),
+.form-input:has(select:focus),
+.form-input:hover  {
+    border-color: black;
+}
+
+.form-input:has(input:focus) .mdi-star {
+    display: none;
+}
+
+.form-input .mdi-close {
+    display: none;
+}
+
+.form-input:has(input:focus) .mdi-close {
+    display: inline-block;
+    color: black;
+}
+
+.form-input:has(input:focus) div,
+.form-input:has(select:focus) div,
+.form-input:hover div  {
+    background-color: black;
+    color: white;
+}
+
+
+.dh-100{
+    height: 180px;
+}
+
+.input-bottom{
+    margin-top: 5%;
+}
+
+input[type="checkbox"]{
+    float: left;
+    margin-right: 10px;
+    background-color: #ccc;
+    width: 25px;
+}
+
+.input-bottom span{
+    font-size: 20px;
+}
+
+button{
+    float: right;
+    font-size: 18px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
