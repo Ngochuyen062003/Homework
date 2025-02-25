@@ -106,12 +106,12 @@ body {
     border-color: #9b59b6;
 }
 
-.card:nth-child(6) .icon.green {
-    background-color: #27ae60;
+.card:nth-child(6) .icon.pink {
+    background-color: pink;
 }
 
 .card:nth-child(6):hover {
-    border-color: #27ae60;
+    border-color: pink;
 }
 
 .title {
