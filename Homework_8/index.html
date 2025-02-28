@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header bar</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            transition: 1s;
+        }
+        .logo>img{
+            width: 40px;
+            border-radius: 50%;
+        }
+        nav>ul {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            gap: 50px; 
+            padding: 0;
+        }
+
+        nav>ul>li{
+            display: inline-block;
+            padding: 5px;
+            list-style: none;
+        }
+        nav>ul>li>a{
+            text-decoration: none;
+            color: rgb(248, 162, 33);
+        }
+        .icon{
+            display: none;
+            padding: 15px;
+        }
+        @media screen and (max-width: 500px) {
+            .icon{
+                display: inline-block;
+            }
+            header>nav{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 500px) {
+            .drawer{
+                display: none !important;
+            }
+        }
+
+        .drawer{
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #e7dfdf;
+        }
+        
+        .drawer>ul>li{
+            list-style: none;
+            line-height: 30px;
+        }
+
+        .drawer>ul>li>a{
+            text-decoration: none;
+            color: rgb(248, 162, 33);
+        }
+
+        .drawer>ul>li>ul>li{
+            list-style: none;
+        }
+
+        .drawer>ul>li>ul>li>a{
+            text-decoration: none;
+            color: rgb(248, 162, 33);
+        }
+
+        label, h1{
+            color: rgb(248, 162, 33);
+        }
+
+        .sm-menu {
+            display: none;
+            padding-left: 20px;
+        }
+
+        #bt-sm-menu:checked + .sm-menu {
+            display: block;
+        }
+
+        #check:checked ~ .drawer{
+            display: inline;
+            width: 40%;
+            padding: 30px;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="https://fullstack.edu.vn/assets/f8-icon-lV2rGpF0.png"
+                    alt>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+
+            </nav>
+
+            <label for="check">
+                <span class="icon mdi mdi-menu"></span>
+            </label>
+            <input type="checkbox" id="check" hidden>
+            <div class="drawer">
+                
+                <h1>My App</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <label for="bt-sm-menu">Product</label>
+                        <input type="checkbox" id="bt-sm-menu" hidden>
+                        <ul class="sm-menu">
+                            <li><a href="#">Iphone</a></li>
+                            <li><a href="#">Samsung</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </header>
+    </body>
+</html>
