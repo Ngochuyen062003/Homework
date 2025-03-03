@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="side-bar">
+                <header class="side-bar__header">
+                    <span class="mdi mdi-stack-overflow logo"></span>
+                    <h1>F8 Admin</h1>
+                </header>
+                <div class="side-bar__item">
+                    <span>Menu</span>
+                </div>
+                <div class="side-bar__item">
+                    <div>
+                        <div>
+                            <label for="buttonChecked">
+                                <span class="mdi mdi-cart"></span>
+                                <span>Quản lý đơn hàng</span>
+                            </label>
+                            <span class="mdi mdi-chevron-down"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="buttonChecked"
+                            hidden="hidden">
+                        <div class="side-bar__item--child">
+                            <div class="side-bar__item--child__item">
+                                <span class="mdi mdi account"></span>
+                                <span>Quản lý đơn trước</span>
+                            </div>
+                            <div class="side-bar__item--child__item">
+                                <span class="mdi mdi account"></span>
+                                <span>Quản lý đơn trả sau</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-bar__item">
+                    <span class="mdi mdi-star"></span>
+                    <span>Quản lý nhân viên</span>
+                </div>
+                <div class="side-bar__item">
+                    <span class="mdi mdi-heart-outline"></span>
+                    <span>Quản lý kho</span>
+                </div>
+                <div class="side-bar__item">
+                    <span class="mdi mdi-account"></span>
+                    <span>Quản lý dịch vụ</span>
+                </div>
+            </div>
+
+            <div class="body-container">
+                <h2>Members List</h2>
+
+                <div class="table">
+                    <div class="table-header">
+                        <div class="table-header__cell">ID</div>
+                        <div class="table-header__cell">Name</div>
+                        <div class="table-header__cell">Phone</div>
+                        <div class="table-header__cell">Action</div>
+                    </div>
+                    <div class="table-body">
+                        <div class="table-body__cell">1</div>
+                        <div class="table-body__cell">Nguyen Thi A</div>
+                        <div class="table-body__cell">0365039618</div>
+                        <div class="table-body__cell">
+                            <button class="btn-edit">
+                                <label for="modal-toggle" class="btn-edit">
+                                    <span class="mdi mdi-pencil"></span>
+                                    Edit
+                                </label>
+                            </button>
+                            <button class="btn-delete">
+                                <span class="mdi mdi-trash-can"></span>
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="table-body__cell">2</div>
+                        <div class="table-body__cell">Nguyen Thi A</div>
+                        <div class="table-body__cell">0365039618</div>
+                        <div class="table-body__cell">
+                            <button class="btn-edit">
+                                <label for="modal-toggle" class="btn-edit">
+                                    <span class="mdi mdi-pencil"></span>
+                                    Edit
+                                </label>
+                            </button>
+                            <button class="btn-delete">
+                                <span class="mdi mdi-trash-can"></span>
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="table-body__cell">3</div>
+                        <div class="table-body__cell">Nguyen Thi A</div>
+                        <div class="table-body__cell">0365039618</div>
+                        <div class="table-body__cell">
+                            <button class="btn-edit">
+                                <label for="modal-toggle" class="btn-edit">
+                                    <span class="mdi mdi-pencil"></span>
+                                    Edit
+                                </label>
+                            </button>
+                            <button class="btn-delete">
+                                <span class="mdi mdi-trash-can"></span>
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="checkbox" id="modal-toggle" hidden>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <label for="modal-toggle" class="btn-close mdi mdi-close"></label>
+                        <h3>Edit Member</h3>
+                
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder="">
+                            <label for="name" class="input-label">Name</label>
+                        </div>
+                
+                        <div class="input-group">
+                            <input type="text" id="phone" required placeholder="">
+                            <label for="phone" class="input-label">Phone</label>
+                        </div>
+                
+                        <button>Edit</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+    </body>
+</html>

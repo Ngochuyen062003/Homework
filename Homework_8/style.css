@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: 1s;
+}
+
+.header__logo img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.header__menu {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.header__menu-item {
+    position: relative;
+}
+
+.header__menu-item a {
+    text-decoration: none;
+    color: rgb(248, 162, 33);
+    padding: 5px;
+    display: block;
+}
+
+.header__submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.header__submenu-item {
+    list-style: none;
+}
+
+.header__submenu-item a {
+    text-decoration: none;
+    color: rgb(248, 162, 33);
+    display: block;
+    padding: 5px;
+}
+
+.header__menu-item--has-submenu:hover .header__submenu {
+    display: block;
+}
+
+.header__menu-icon {
+    display: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .header__menu-icon {
+        display: block;
+    }
+    .header__nav {
+        display: none;
+    }
+}
+
+.sidebar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #e7dfdf;
+    width: 40%;
+    padding: 30px;
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+    display: block;
+}
+
+.sidebar__title {
+    color: rgb(248, 162, 33);
+}
+
+.sidebar__menu {
+    list-style: none;
+}
+
+.sidebar__menu-item {
+    line-height: 30px;
+    list-style: none;
+}
+
+.sidebar__submenu-item{
+    list-style: none;
+}
+
+.sidebar__menu-item a {
+    text-decoration: none;
+    color: rgb(248, 162, 33);
+}
+
+.sidebar__submenu {
+    display: none;
+    padding-left: 20px;
+}
+
+.sidebar label{
+    color: rgb(248, 162, 33);
+}
+
+#submenu-toggle:checked + .sidebar__submenu {
+    display: block;
+}
+
+@media screen and (min-width: 640px) {
+    .sidebar {
+        display: none !important;
+    }
+}
