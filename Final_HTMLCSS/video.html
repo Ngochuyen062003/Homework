@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="video.css">
+        <title>YouTube</title>
+    </head>
+    <body class="container">
+        <input type="checkbox" id="sidebar-extend" hidden>
+        <header>
+            <input type="checkbox" id="show-search-bar" hidden>
+
+            <div class="back-btn">
+                <button>
+                    <label for="show-search-bar">
+                        <span class="fa-solid fa-arrow-left"></span>
+                    </label>
+                </button>
+            </div>
+
+            <div class="nav-group">
+                <div class="sidebar-extend-btn">
+                    <button>
+                        <label for="sidebar-extend">
+                            <span class="fa-solid fa-bars"></span>
+                        </label>
+                    </button>
+                </div>
+
+                <div class="logo">
+                    <a href="#"><img src="youtube_logo.png"
+                            alt="youtube logo"></a>
+                </div>
+            </div>
+
+            <div class="search-group">
+                <div class="search-bar">
+                    <div class="search-bar__search-box">
+                        <span class="fa-solid fa-magnifying-glass"></span>
+                        <input type="text" name="search-content"
+                            placeholder="Tìm kiếm">
+                        <button><span
+                                class="fa-solid fa-keyboard"></span></button>
+                    </div>
+
+                    <button type="submit" title="Tìm kiếm">
+                        <span class="fa-solid fa-magnifying-glass"></span>
+                    </button>
+                </div>
+
+                <div class="open-search-bar-btn notation-below">
+                    <button>
+                        <label for="show-search-bar">
+                            <span class="fa-solid fa-magnifying-glass"></span>
+                        </label>
+                    </button>
+                    <div class="notation">Tìm kiếm
+                    </div>
+                </div>
+
+                <div class="voice-search-btn notation-below">
+                    <button>
+                        <span class="fa-solid fa-microphone"></span>
+                    </button>
+                    <div class="notation tooltip-right-edge">Tìm kiếm bằng giọng
+                        nói</div>
+                </div>
+            </div>
+
+            <div class="settings-group">
+                <div class="settings-btn notation-below">
+                    <button>
+                        <span class="fa-solid fa-ellipsis-vertical"></span>
+                    </button>
+                    <div class="notation">Cài đặt
+                    </div>
+                </div>
+
+                <div class="login-btn">
+                    <button>
+                        <span class="fa-regular fa-circle-user"></span>
+                        <span>Đăng nhập</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="body-container">
+
+            <nav class="sidebar-full">
+                <div class="nav-group">
+                    <div class="sidebar-extend-btn">
+                        <button>
+                            <label for="sidebar-extend">
+                                <span class="fa-solid fa-bars"></span>
+                            </label>
+                        </button>
+                    </div>
+
+                    <div class="logo">
+                        <a href="#"><img src="youtube_logo.png"
+                                alt="youtube logo"></a>
+                    </div>
+                </div>
+
+                <ul class="nav">
+                    <li class="nav__item">
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span class="fa-solid fa-house"></span>
+                                    <span>Trang chủ</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span
+                                        class="fa-solid fa-clapperboard"></span>
+                                    <span>Shorts</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span class="fa-solid fa-tv"></span>
+                                    <span>Kênh đăng ký</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <ul class="sub-nav">
+                            <li>
+                                <div style="margin: 10px">Hãy đăng nhập để thích
+                                    video, bình luận và đăng ký kênh.</div>
+                                <div class="login-btn">
+                                    <button>
+                                        <span
+                                            class="fa-regular fa-circle-user"></span>
+                                        <span>Đăng nhập</span>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <div>Khám phá</div>
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span class="fa-solid fa fa-fire"></span>
+                                    <span>Thịnh hành</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span class="fa-solid fa fa-music"></span>
+                                    <span>Âm nhạc</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span class="fa-solid fa fa-gamepad"></span>
+                                    <span>Trò chơi</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span
+                                        class="fa-solid fa fa-newspaper"></span>
+                                    <span>Tin tức</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span class="fa-solid fa fa-trophy"></span>
+                                    <span>Thể thao</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span class="fa-solid fa fa-cog"></span>
+                                    <span>Cài đặt</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span
+                                        class="fa-solid fa fa-info-circle"></span>
+                                    <span>Trợ giúp</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span class="fa-solid fa-flag"></span>
+                                    <span>Liên hệ</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <ul class="sub-nav">
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span class="fa-solid fa fa-cog"></span>
+                                    <span>Cài đặt</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span
+                                        class="fa-solid fa fa-info-circle"></span>
+                                    <span>Trợ giúp</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="sub-nav__link">
+                                    <span class="fa-solid fa-flag"></span>
+                                    <span>Liên hệ</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <label for="sidebar-extend" class="overlay">
+            </label>
+
+            <main>
+                <div class="video-container">
+                    <div class="video-thumbnail">
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/KApdB1wrrEU?si=QU6wtk_K4v6hOLsk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h2 class="video-title">Apologize,
+                        Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                        English Songs Cover Of Popular TikTok Songs
+                    </h2>
+                    <div class="top-row">
+                        <div class="channel-info">
+                            <div class="channel-avatar">
+                                <img src="ava.jpg" alt="channel avatar">
+                            </div>
+                            <div class="channel-name">
+                                <span class="channel-name__text">Sunset Mood -
+                                    Nhạc chill Tiếng Anh</span>
+                                <span class="channel-name__sub">356N người đăng
+                                    ký</span>
+                            </div>
+                        </div>
+                        <div class="subscribe-btn">
+                            <button>Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+                <aside>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-videos">
+                        <div class="video-item__thumbnail">
+                            <img src="video.png" alt="thumbnail">
+                        </div>
+                        <div class="video-item__info">
+                            <h3 class="video-item__title">Apologize,
+                                Let Me Down Slowly ♫ Sad Songs 2023 ♫ Top
+                                English Songs Cover Of Popular TikTok Songs
+                            </h3>
+                            <div class="video-item__channel-name">
+                                <span
+                                    class="video-item__channel-name__text">Sunset
+                                    Mood - Nhạc chill Tiếng Anh</span>
+                                <span
+                                    class="video-item__channel-name__sub">356N
+                                    lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </main>
+        </div>
+    </body>
+</html>

@@ -125,24 +125,60 @@
 
                 <div class="modal">
                     <div class="modal-content">
-                        <label for="modal-toggle" class="btn-close mdi mdi-close"></label>
+                        <label for="modal-toggle"
+                            class="btn-close mdi mdi-close"></label>
                         <h3>Edit Member</h3>
-                
+
                         <div class="input-group">
-                            <input type="text" id="name" required placeholder="">
+                            <input type="text" id="name" required placeholder>
                             <label for="name" class="input-label">Name</label>
                         </div>
-                
+
                         <div class="input-group">
-                            <input type="text" id="phone" required placeholder="">
+                            <input type="text" id="phone" required placeholder>
                             <label for="phone" class="input-label">Phone</label>
                         </div>
-                
+
                         <button>Edit</button>
                     </div>
                 </div>
-                
 
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="dialog">
+                <div class="dialog__header">
+                    <div class="dialog__header_title">
+                        <h3>Edit</h3>
+                    </div>
+                    <div class="dialog__header__icon">
+                        <span class="mdi mdi-close"></span>
+                    </div>
+                </div>
+                <div class="dialog-body">
+                    <div class="dialog__body__input">
+                        <input type="text" placeholder>
+                        <span>Skill</span>
+                        <span class="icon mdi mdi-arrow-down"></span>
+                        <div class="dropdown">
+                            <div class="dropdown__item">Python</div>
+                            <div class="dropdown__item">PHP</div>
+                            <div class="dropdown__item">C++</div>
+                        </div>
+                    </div>
+                    <div class="dialog__body__input">
+                        <input type="text" placeholder>
+                        <span>Name</span>
+                    </div>
+                    <div class="dialog__body__input">
+                        <input type="text" placeholder>
+                        <span>Email</span>
+                    </div>
+                </div>
+                <div class="dialog__action">
+                    <button class="dialog__btn__save">Save</button>
+                    <button class="dialog__btn__close">Close</button>
+                </div>
             </div>
         </div>
 
