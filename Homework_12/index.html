@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 12</title>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <!-- 
+        Bài 1: Tìm số nguyên tố
+                                                          
+             var n                                
+               │                                  
+               │                                  
+               │                                  
+               │                                  
+               ▼       t                          
+             n <= 1  ──────► n isn't prime        
+               │                                  
+               │f                                 
+               │                                  
+               ▼                                  
+             var i = 2                            
+                 │                                
+                 │                                
+                 │                                
+                 ▼          t                     
+      ┌───► i >= n ** 0.5 ───────► n is prime     
+      │          │                                
+      │          │                                
+      │          │f                               
+      │          │                                
+      │          ▼         t                      
+      │     n % i === 0 ────────► n isn't prime   
+      │          │                                
+      │          │                                
+      │          │f                               
+      │          │                                
+      │          │                                
+      │          ▼                                
+      └───── i = i + 1                            
+                                                  
+
+      Bài 2: Tìm số chính phương
+
+                var n                        
+                │                          
+                │                          
+                ▼      f                   
+            n >= 0 ───────► n isn't square     
+                │                          
+                │                          
+                ▼                          
+            var s = n ** 0.5              
+                    │                       
+                    │                       
+                    │                       
+                    ▼        f              
+                s % 1 ===0 ───────► n isn't square
+                    │                       
+                    │t                      
+                    │                       
+                    ▼                       
+                n is square                 
+                                
+    Bài 3: Tìm số hoàn hảo
+
+                                                                                             
+           var n                                                                    
+             │                                                                      
+             │                                                                      
+             ▼      t                                                               
+           n <= 1 ───────► n isn't ◄─────────────────────┐                          
+             │                                           │                          
+             │f                                          │f                         
+             │                                           │                          
+             ▼                                           │      t                   
+          var i = 2, sum = 1     ┌─────────────────►sum === n ───────► n is perfect 
+             │                   │                                                  
+             │                   │f                                                 
+             │                   │                                                  
+             ▼          f        │             t                                    
+   ┌───► n ** 0.5 > i ──────► n ** 0.5 === i ──────► sum = sum + i                  
+   │         │                                                                      
+   │         │t                                                                     
+   │         │                                                                      
+   │         ▼          t                                                           
+   │     n % i === 0 ───────► sum = sum + i + n/i                                   
+   │         │                          │                                           
+   │         │f                         │                                           
+   │         │                          │                                           
+   │         ▼                          │                                           
+   └────── i = i + 1  ◄─────────────────┘                                           
+                                                                                    
+                                                                                    
+    -->
+</body>
+</html>
